@@ -25,6 +25,7 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Label1 = New Label()
         Button1 = New Button()
+        Button2 = New Button()
         SuspendLayout()
         ' 
         ' Label1
@@ -53,6 +54,18 @@ Partial Class Form1
         Button1.Text = "JOUER"
         Button1.UseVisualStyleBackColor = False
         ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Transparent
+        Button2.Font = New Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button2.ForeColor = Color.Red
+        Button2.Location = New Point(296, 9)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(26, 27)
+        Button2.TabIndex = 4
+        Button2.Text = "X"
+        Button2.UseVisualStyleBackColor = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -60,6 +73,7 @@ Partial Class Form1
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(334, 235)
+        Controls.Add(Button2)
         Controls.Add(Button1)
         Controls.Add(Label1)
         Name = "Form1"
@@ -71,5 +85,6 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 
 End Class
